@@ -14,4 +14,6 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+// Login
 Route::get('/', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'loginUser'])->name('loginUser');
