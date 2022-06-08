@@ -3,14 +3,8 @@
     width: 100%;
 }
 
-.dv-logo {
-    align-items: center;
-    display: inline-flex;
-    padding: 0px 40px !important;
-}
-
 #img-logo {
-    width: 100%;
+    width: 80%;
 }
 @charset "UTF-8";
 html {
@@ -20,6 +14,10 @@ html {
 body {
   height: 100%;
   margin: 0px;
+}
+
+form label {
+  font-size: 15px;
 }
 
 /*!
