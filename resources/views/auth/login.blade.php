@@ -14,15 +14,18 @@
         </div>
         <div class="col-md-6">
             <div class="row">
+
                 {{Form::open()}}
-                <div class="col-md-12 form-group">
-
+                <div class="col-md-12 mb-3">
+                    {{Form::label('email', 'Email')}}
+                    {{Form::text('email', '', ['class' => 'form-control'])}}
                 </div>
-                <div class="col-md-12 form-group">
-
+                <div class="col-md-12 mb-3">
+                    {{Form::label('password', 'Password')}}
+                    {{Form::password('password', ['class' => 'form-control'])}}
                 </div>
-
                 {{Form::close()}}
+
             </div>
         </div>
     </div>
