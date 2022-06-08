@@ -16,6 +16,8 @@
             <div class="row justify-content-center">
 
                 {{Form::open(['route' => 'loginUser', 'class' => 'form-login'])}}
+
+                @include('partials.errors')
                 <div class="col-md-12 mb-3">
                     {{Form::label('email', 'Email')}}
                     {{Form::text('email', old('email'), ['class' => 'form-control'])}}
