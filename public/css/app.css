@@ -10,6 +10,11 @@
 form {
     width: 75% !important
 }
+
+form .btn {
+    font-size: 15px;
+    width: 100%;
+}
 @charset "UTF-8";
 html {
   height: 100%;
@@ -10290,4 +10295,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.btn-primary {
+  background-color: #8dc63f;
+  border-color: #8dc63f;
 }
