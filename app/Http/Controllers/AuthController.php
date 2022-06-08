@@ -9,6 +9,6 @@ class AuthController extends Controller
 {
     public function login(): view
     {
-        echo 'login here';
+        return view('auth.login');
     }
 }
