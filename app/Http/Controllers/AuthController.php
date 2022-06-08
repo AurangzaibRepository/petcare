@@ -23,4 +23,11 @@ class AuthController extends Controller
             'required' => ':attribute is required'
         ]);
     }
+
+    public function register(): view
+    {
+        return view('auth.register', [
+            'pageTitle' => config('app.name'). ' - Register'
+        ]);
+    }
 }
