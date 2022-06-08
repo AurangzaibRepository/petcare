@@ -13,4 +13,8 @@ class AuthController extends Controller
             'pageTitle' => config('app.name') . ' - Login'
         ]);
     }
+
+    public function loginUser(Request $request)
+    {
+    }
 }
