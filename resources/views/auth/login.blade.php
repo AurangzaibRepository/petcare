@@ -18,7 +18,7 @@
                 {{Form::open(['route' => 'loginUser', 'class' => 'form-login'])}}
                 <div class="col-md-12 mb-3">
                     {{Form::label('email', 'Email')}}
-                    {{Form::text('email', '', ['class' => 'form-control'])}}
+                    {{Form::text('email', old('email'), ['class' => 'form-control'])}}
                 </div>
                 <div class="col-md-12 mb-3">
                     {{Form::label('password', 'Password')}}
