@@ -15,7 +15,7 @@
         <div class="col-md-6">
             <div class="row justify-content-center">
 
-                {{Form::open()}}
+                {{Form::open(['class' => 'form-login'])}}
                 <div class="col-md-12 mb-3">
                     {{Form::label('email', 'Email')}}
                     {{Form::text('email', '', ['class' => 'form-control'])}}
