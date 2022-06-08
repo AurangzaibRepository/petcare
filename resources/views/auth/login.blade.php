@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <div class="row dv-base">
-        <div class="col-md-6 dv-logo">
+    <div class="row dv-base d-flex align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
             <img src="/images/petcare-logo.png" id="img-logo"></img>
         </div>
         <div class="col-md-6">
