@@ -9,6 +9,8 @@ class AuthController extends Controller
 {
     public function login(): view
     {
-        return view('auth.login');
+        return view('auth.login', [
+            'pageTitle' => config('app.name') . ' - Login'
+        ]);
     }
 }
