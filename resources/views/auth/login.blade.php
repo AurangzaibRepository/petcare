@@ -24,6 +24,9 @@
                     {{Form::label('password', 'Password')}}
                     {{Form::password('password', ['class' => 'form-control'])}}
                 </div>
+                <div class="col-md-12">
+                    {{Form::submit('Login', ['class' => 'btn btn-primary'])}}
+                </div>
                 {{Form::close()}}
 
             </div>
