@@ -13,7 +13,7 @@
             <img src="/images/petcare-logo.png" id="img-logo"></img>
         </div>
         <div class="col-md-6">
-            <div class="row">
+            <div class="row justify-content-center">
 
                 {{Form::open()}}
                 <div class="col-md-12 mb-3">
