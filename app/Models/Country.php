@@ -12,6 +12,6 @@ class Country extends Model
         $data = $this->orderBy('country_name')
                      ->pluck('country_name', 'id');
 
-        return $data;
+        return $data->prepend('-- Select --', '');
     }
 }
