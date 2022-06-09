@@ -8,13 +8,13 @@
 </head>
 
 <body>
+    {{Form::open(['class' => 'form-register'])}}
     <div class="row dv-base d-flex align-items-center">
-        <div class="col-md-6 d-flex justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
             <img src="/images/petcare-logo.png" id="img-logo" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="row justify-content-center">
-                {{Form::open(['class' => 'form-login'])}}
                 <div class="col-md-12 mb-3">
                     {{Form::label('first_name', 'First Name')}}
                     {{Form::text('first_name', '', ['class' => 'form-control'])}}
@@ -31,6 +31,10 @@
                     {{Form::label('phone_no', 'Phone Number')}}
                     {{Form::text('phone_no', '', ['class' => 'form-control'])}}
                 </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row justify-content-center">
                 <div class="col-md-12 mb-3">
                     {{Form::label('country_id', 'Country')}}
                     {{Form::select('country_id', [], '', ['class' => 'form-select'])}}
@@ -47,10 +51,10 @@
                     {{Form::label('confirm_password', 'Confirm Password')}}
                     {{Form::password('password', ['class' => 'form-control'])}}
                 </div>
-                {{Form::close()}}
             </div>
         </div>
     </div>
+    {{Form::close()}}
 </body>
 
 </html>
