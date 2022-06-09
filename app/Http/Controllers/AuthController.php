@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use App\Http\Requests\RegisterRequest;
 
 class AuthController extends Controller
 {
@@ -27,12 +28,12 @@ class AuthController extends Controller
     public function register(): view
     {
         return view('auth.register', [
-            'pageTitle' => config('app.name'). ' - Register'
+            'pageTitle' => config('app.name'). ' - Register',
+            'roles' => config('app.roles')
         ]);
     }
 
-    public function registerUser(Request $request)
+    public function registerUser(Request $request, RegisterRequest $registerRequest)
     {
-        echo 'asdas';
     }
 }
