@@ -5,9 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Http\Requests\RegisterRequest;
+use App\Models\Country;
 
 class AuthController extends Controller
 {
+    public function __construct(
+        private Country $country
+    ) {
+    }
+
     public function login(): view
     {
         return view('auth.login', [
@@ -29,7 +35,8 @@ class AuthController extends Controller
     {
         return view('auth.register', [
             'pageTitle' => config('app.name'). ' - Register',
-            'roles' => config('app.roles')
+            'roles' => config('app.roles'),
+            'countries' => $this->country->getAll()
         ]);
     }
 
