@@ -1,4 +1,7 @@
 {{Form::open(['route' => 'registerUser', 'class' => 'form-register'])}}
+
+@include('partials.errors')
+
 <div class="row dv-base">
     <div class="col-md-4 d-flex justify-content-center">
         <img src="/images/petcare-logo.png" id="img-logo" />
