@@ -15,6 +15,10 @@
     font-size: 15px;
     width: 100%;
 }
+.form-register {
+    height: 100%;
+    width: 100%
+}
 @charset "UTF-8";
 html {
   height: 100%;
