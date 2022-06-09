@@ -10,7 +10,7 @@
 <body>
 
     <div class="d-flex align-items-center dv-base">
-        {{Form::open()}}
+        {{Form::open(['class' => 'form-register'])}}
         <div class="row dv-base">
             <div class="col-md-4 d-flex justify-content-center">
                 <img src="/images/petcare-logo.png" id="img-logo" />
@@ -56,8 +56,11 @@
                 </div>
             </div>
             <div class="col-md-4"></div>
-            <div class="col-md-8">
+            <div class="col-md-4">
                 {{Form::submit('Register', ['class' => 'btn btn-primary'])}}
+            </div>
+            <div class="col-md-4">
+                {{Form::submit('Reset', ['class' => 'btn btn-secondary'])}}
             </div>
         </div>
         {{Form::close()}}
