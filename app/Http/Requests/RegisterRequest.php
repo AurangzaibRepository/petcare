@@ -20,8 +20,8 @@ class RegisterRequest extends FormRequest
             'phone_no' => 'required',
             'country_id' => 'required',
             'role' => 'required',
-            'password' => 'required',
-            'confirm_password' => 'required'
+            'password' => 'required|confirmed',
+            'password_confirmation' => 'required'
         ];
     }
 
@@ -29,7 +29,15 @@ class RegisterRequest extends FormRequest
     {
         return [
             'required' => ':attribute is required',
-            'email' => ':attribute must be valid email address'
+            'email' => ':attribute must be valid email address',
+            'password.confirmed' => 'password and confirm password do not match'
+        ];
+    }
+
+    public function attributes()
+    {
+        return [
+            'password_confirmation' => 'confirm password'
         ];
     }
 }
