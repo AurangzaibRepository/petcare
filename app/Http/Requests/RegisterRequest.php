@@ -11,7 +11,7 @@ class RegisterRequest extends FormRequest
         return true;
     }
 
-    public function rules()
+    public function rules(): array
     {
         return [
             'first_name' => 'required',
@@ -25,7 +25,7 @@ class RegisterRequest extends FormRequest
         ];
     }
 
-    public function messages()
+    public function messages(): array
     {
         return [
             'required' => ':attribute is required',
@@ -34,7 +34,7 @@ class RegisterRequest extends FormRequest
         ];
     }
 
-    public function attributes()
+    public function attributes(): array
     {
         return [
             'password_confirmation' => 'confirm password'
