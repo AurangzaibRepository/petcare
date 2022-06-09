@@ -212,4 +212,10 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
+    'roles' => [
+        'User' => 'User',
+        'Shop Owner' => 'Shop Owner',
+        'Vet' => 'Vet'
+    ]
+
 ];
