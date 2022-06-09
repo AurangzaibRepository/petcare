@@ -30,7 +30,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12 mb-3">
                 {{Form::label('country_id', 'Country')}}
-                {{Form::select('country_id', [], '', ['class' => 'form-select'])}}
+                {{Form::select('country_id', $countries, '', ['class' => 'form-select'])}}
             </div>
             <div class="col-md-12 mb-3">
                 {{Form::label('role', 'Role')}}
