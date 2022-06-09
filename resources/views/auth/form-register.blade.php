@@ -34,15 +34,15 @@
             </div>
             <div class="col-md-12 mb-3">
                 {{Form::label('role', 'Role')}}
-                {{Form::select('role', [], '', ['class' => 'form-select'])}}
+                {{Form::select('role', $roles, '', ['class' => 'form-select'])}}
             </div>
             <div class="col-md-12 mb-3">
                 {{Form::label('password', 'Password')}}
                 {{Form::password('password', ['class' => 'form-control'])}}
             </div>
             <div class="col-md-12 mb-3">
-                {{Form::label('confirm_password', 'Confirm Password')}}
-                {{Form::password('password', ['class' => 'form-control'])}}
+                {{Form::label('password_confirmation', 'Confirm Password')}}
+                {{Form::password('password_confirmation', ['class' => 'form-control'])}}
             </div>
         </div>
     </div>
