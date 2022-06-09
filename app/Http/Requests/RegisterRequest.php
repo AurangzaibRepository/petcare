@@ -20,14 +20,16 @@ class RegisterRequest extends FormRequest
             'phone_no' => 'required',
             'country_id' => 'required',
             'role' => 'required',
-            'password' => 'required'
+            'password' => 'required',
+            'confirm_password' => 'required'
         ];
     }
 
     public function messages()
     {
         return [
-            'required' => ':attribute is required'
+            'required' => ':attribute is required',
+            'email' => ':attribute must be valid email address'
         ];
     }
 }
