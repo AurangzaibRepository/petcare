@@ -23,4 +23,11 @@ class RegisterRequest extends FormRequest
             'password' => 'required'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'required' => ':attribute is required'
+        ];
+    }
 }
