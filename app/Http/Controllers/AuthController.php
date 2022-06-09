@@ -30,4 +30,9 @@ class AuthController extends Controller
             'pageTitle' => config('app.name'). ' - Register'
         ]);
     }
+
+    public function registerUser(Request $request)
+    {
+        echo 'asdas';
+    }
 }
